@@ -65,19 +65,19 @@ nav>h3 {
     font-weight: 500;
     line-height: 26px;
     color: rgba(66, 66, 66, 1);
-      position: relative;
-  padding: 10px 20px;
+    position: relative;
+    padding: 10px 20px;
 }
 
 .nav-a::after {
     content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0%;
-  height: 2px;
-  background: black;
-  transition: 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: black;
+    transition: 0.3s;
 }
 
 .nav-a:hover::after {
@@ -107,7 +107,7 @@ nav>h3 {
 }
 
 .banner-subtitle {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 26px;
     color: rgba(102, 102, 102, 1);
@@ -136,47 +136,135 @@ main {
     border: 2px solid salmon;
 }
 
-#team{
+#team {
     margin: 70px;
 }
-.team-container{
+
+.team-container {
     display: flex;
     align-items: center;
     gap: 70px;
 }
 
-.team-description{
+.team-description {
     max-width: 537px;
 }
 
-.team-images{
+.team-images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
-.span1{
+.span1 {
     font-size: 2.8rem;
     font-weight: 500;
     color: rgba(114, 114, 114, 1);
 }
-.span2{
+
+.span2 {
     font-size: 2.8rem;
     font-weight: 700;
     color: rgba(19, 19, 19, 1);
 }
-.span3{
+
+.span3 {
     font-size: 2.8rem;
     font-weight: 700;
     color: rgba(255, 144, 14, 1);
 }
 
-.team-subtitle{
+.team-subtitle {
     font-size: 1rem;
-font-weight: 400;
-line-height: 26px;
-color: rgba(102, 102, 102, 1);
-margin: 24px 0px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgba(102, 102, 102, 1);
+    margin: 24px 0px;
+}
+
+
+/* Facts Section */
+
+.fact-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 53px;
+    margin-bottom: 20px;
+}
+
+.fact-subtitle {
+    max-width: 545px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgba(102, 102, 102, 1);
+    margin-bottom: 80px;
+}
+
+.fact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.fact-card {
+    width: 241.83px;
+    height: 241.83px;
+    border: 1px solid rgba(255, 144, 14, 1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fact-number{
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 53px;
+    color: #424242;
+    margin: 10px 0px 5px 0px;
+}
+
+.fact-text{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    color: #666666;
+}
+
+
+/* Sponsor Section */
+
+
+#sponsors {
+    margin: 150px 0px;
+    text-align: center;
+}
+.sponsor-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 53px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sponsor-description {
+    max-width: 545px;
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgba(102, 102, 102, 1);
+    margin-bottom: 50px;
+}
+
+.sponsor-logos {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    gap: 40px;
 }
 
 /* Responsive Section */
@@ -187,7 +275,7 @@ margin: 24px 0px;
         line-height: 45px;
     }
 
-    .banner-subtitle{
+    .banner-subtitle {
         padding: 15px;
     }
 
@@ -203,26 +291,45 @@ margin: 24px 0px;
         align-items: center;
     }
 
-    .team-container{
+    .team-container {
         flex-direction: column;
         gap: 80px;
         text-align: center;
     }
 
-    .team-images img{
-        width: 100%;
+    .team-images img {
+        width: 110%;
     }
 
-    .span1{
-    font-size: 2.2rem;
-    
-}
-.span2{
-    font-size: 2.2rem;
-    
-}
-.span3{
-    font-size: 2.2rem;
-    
+    .span1 {
+        font-size: 2.2rem;
+
+    }
+
+    .span2 {
+        font-size: 2.2rem;
+
+    }
+
+    .span3 {
+        font-size: 2.2rem;
+
+    }
+
+    .fact-title{
+        font-size: 2rem;
+        line-height: 42px;
+    }
+    .fact-cards{
+        gap: 20px;
+    }
+
+    .sponsor-logos img{
+        width: 70px;
+    }    
+    .sponsor-logos{
+
+        flex-wrap: wrap;
+        justify-content: space-around;
 }
 }
