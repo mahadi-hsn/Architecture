@@ -133,7 +133,7 @@ nav>h3 {
 main {
     max-width: 1440px;
     margin: 0px auto;
-    border: 2px solid salmon;
+    /* border: 2px solid salmon; */
 }
 
 #team {
@@ -183,6 +183,98 @@ main {
 }
 
 
+/* Feature section */
+#border {
+    border-left: 5px solid rgba(255, 144, 14, 1);
+    margin-right: 15px;
+}
+
+#feature {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 120px; */
+    margin: 130px 0px 150px 0px;
+}
+
+ .feature-title {
+    max-width:468px;;
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 53px;
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+.feature-subtitle {
+    max-width: 586px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgba(102, 102, 102, 1);
+    margin-bottom: 60px;
+}
+
+.feature-card {
+    max-width: 586px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgba(255, 255, 255, 1);
+    margin-bottom: 20px;
+    padding: 35px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600px;
+    line-height: 23px;
+    color: rgba(19, 19, 19, 1);
+}
+
+.card-subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgba(102, 102, 102, 1);
+    margin-top: 10px;
+}
+
+
+
+.card-image{
+    width: 708px;
+height: 982px;
+}
+.card-image> img {
+    width: 100%;
+}
+
+
+
+.btn-extra {
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 144, 14, 1);
+    padding: 42px 50px;
+    margin-top: -100px;
+    margin-left: -100px;
+    cursor: pointer;
+}
+
+.year {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 53px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.exp {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 1);
+} 
+
+
 /* Facts Section */
 
 .fact-title {
@@ -218,7 +310,7 @@ main {
     align-items: center;
 }
 
-.fact-number{
+.fact-number {
     font-size: 2.8rem;
     font-weight: 500;
     line-height: 53px;
@@ -226,7 +318,7 @@ main {
     margin: 10px 0px 5px 0px;
 }
 
-.fact-text{
+.fact-text {
     font-size: 1rem;
     font-weight: 400;
     line-height: 26px;
@@ -241,6 +333,7 @@ main {
     margin: 150px 0px;
     text-align: center;
 }
+
 .sponsor-title {
     font-size: 2.8rem;
     font-weight: 700;
@@ -316,20 +409,22 @@ main {
 
     }
 
-    .fact-title{
+    .fact-title {
         font-size: 2rem;
         line-height: 42px;
     }
-    .fact-cards{
+
+    .fact-cards {
         gap: 20px;
     }
 
-    .sponsor-logos img{
+    .sponsor-logos img {
         width: 70px;
-    }    
-    .sponsor-logos{
+    }
+
+    .sponsor-logos {
 
         flex-wrap: wrap;
         justify-content: space-around;
-}
+    }
 }
